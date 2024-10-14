@@ -1,0 +1,11 @@
+.fixed-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 20px;
+    bottom: 0;
+    z-index: 1088;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
