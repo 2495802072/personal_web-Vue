@@ -1,6 +1,6 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
-import IconExToText from "../components/IconExToText.vue";
+import IconExToText from "@/components/IconExToText.vue";
 
 export default defineComponent({
   name: "Nav",

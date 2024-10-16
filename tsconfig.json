@@ -9,12 +9,10 @@
     }
   ],
   "compilerOptions": {
-
     /* 配置@路径 */
     "baseUrl": ".",
-    "paths":{
-      "@": ["src"],
-      "@/*": ["src/*"],
+    "paths": {
+      "@/*": ["src/*"]
     }
   }
 }

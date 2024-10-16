@@ -1,5 +1,5 @@
 <script lang="ts">
-import {defineComponent} from 'vue'
+import {CSSProperties, defineComponent} from 'vue'
 
 export default defineComponent({
   name: "IconExToText",
@@ -20,24 +20,24 @@ export default defineComponent({
   data() {
     return {
       absoluteStyles: {
-        display: 'none',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        maxHeight: '40px'
-      },
+        display: "none",
+        position: "absolute",
+        top: "0",
+        left: "0",
+        width: "100%",
+        height: "100%",
+        maxHeight: "40px"
+      } as CSSProperties, // 明确指定类型
       relativeStyles: {
-        position: 'relative',
-        display: 'flex',
-        whiteSpace: 'nowrap',
-        paddingTop: '2px',
-        width: '200px',
-        height: '100%',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }
+        position: "relative",
+        display: "flex",
+        whiteSpace: "nowrap",
+        paddingTop: "2px",
+        width: "200px",
+        height: "100%",
+        alignItems: "center",
+        justifyContent: "center"
+      } as CSSProperties // 明确指定类型
     }
   },
   computed: {

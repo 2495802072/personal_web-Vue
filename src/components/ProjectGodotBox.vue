@@ -1,7 +1,7 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
-import ProjectG from "@/components/ProjectG.vue";
-import {Project} from "@/interface/types.ts";
+import ProjectG from "./ProjectG.vue";
+import {Project} from "../interface/types.ts";
 
 export default defineComponent({
   name: "ProjectGodotBox",

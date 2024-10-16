@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import {Project} from "@/interface/types.ts";
-import ProjectGodotBox from "@/components/ProjectGodotBox.vue";
-import ProjectUnityBox from "@/components/ProjectUnityBox.vue";
+import {Project} from "../interface/types.ts";
+import ProjectGodotBox from "../components/ProjectGodotBox.vue";
+import ProjectUnityBox from "../components/ProjectUnityBox.vue";
 
 const projectListG1: Project[] = [
   {

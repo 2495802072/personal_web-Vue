@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     // 设置路径别名
     alias: {
-      '@': resolve(__dirname, './src')
+      '@': resolve(__dirname, 'src')
     },
   }
 

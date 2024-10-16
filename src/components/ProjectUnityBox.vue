@@ -1,7 +1,7 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
-import ProjectU from "@/components/ProjectU.vue";
-import {Project} from "@/interface/types.ts";
+import ProjectU from "./ProjectU.vue";
+import {Project} from "../interface/types.ts";
 
 export default defineComponent({
   name: "ProjectUnityBox",
