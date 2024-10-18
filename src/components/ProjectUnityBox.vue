@@ -21,7 +21,7 @@ export default defineComponent({
     <label>Unity Projects</label>
     <table>
       <tr v-for="item in projectList" ><td>
-        <project-u :url="item.url" :icon_url="item.icon_url" :name="item.name" :date="item.date" :author="item.author?item.author:null" :background_url="item.background_photo_url"/>
+        <project-u :url="item.url" :icon_url="item.icon_url" :name="item.name" :date="item.date" :author="item.author?item.author:'null'" :background_url="item.background_photo_url"/>
       </td></tr>
     </table>
   </div>
