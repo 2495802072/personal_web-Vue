@@ -15,7 +15,7 @@ export default defineComponent({
           text: '首页'
         },{
           link_to: '/archives',
-          icon_url: "@/assets/svg_icon/id-badge-2.svg",
+          icon_url: "./src/assets/svg_icon/id-badge-2.svg",
           text: '档案'
         },{
           link_to: '/categories',
