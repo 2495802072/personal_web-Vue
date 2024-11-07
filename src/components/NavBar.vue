@@ -11,7 +11,7 @@ export default defineComponent({
         theme_dark: true,
         nav_list: [{ // pages 加完记得修改router/index.ts
           link_to: '/',
-          icon_url: "src/assets/svg_icon/home-alt.svg",
+          icon_url: iconHome,
           text: '首页'
         },{
           link_to: '/archives',
