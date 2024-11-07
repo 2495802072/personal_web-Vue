@@ -1,6 +1,7 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
 import IconExToText from "../components/IconExToText.vue";
+import iconHome from "../assets/svg_icon/home-alt.svg"
 
 export default defineComponent({
   name: "Nav",
@@ -10,23 +11,23 @@ export default defineComponent({
         theme_dark: true,
         nav_list: [{ // pages 加完记得修改router/index.ts
           link_to: '/',
-          icon_url: 'src/assets/svg_icon/home-alt.svg',
+          icon_url: "src/assets/svg_icon/home-alt.svg",
           text: '首页'
         },{
           link_to: '/archives',
-          icon_url: 'src/assets/svg_icon/id-badge-2.svg',
+          icon_url: "@/assets/svg_icon/id-badge-2.svg",
           text: '档案'
         },{
           link_to: '/categories',
-          icon_url: 'src/assets/svg_icon/grid.svg',
+          icon_url: "../assets/svg_icon/grid.svg",
           text: '分类'
         },{
           link_to: '/messages',
-          icon_url: 'src/assets/svg_icon/envelope-alt.svg',
+          icon_url: '../assets/svg_icon/envelope-alt.svg',
           text: '消息'
         },{
           link_to: '/projects',
-          icon_url: 'src/assets/svg_icon/box.svg',
+          icon_url: '../assets/svg_icon/box.svg',
           text: '项目'
         }]
       }
