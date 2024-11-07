@@ -2,6 +2,10 @@
 import {defineComponent} from 'vue'
 import IconExToText from "../components/IconExToText.vue";
 import iconHome from "../assets/svg_icon/home-alt.svg"
+import iconBadge from "../assets/svg_icon/id-badge-2.svg"
+import iconGrid from "../assets/svg_icon/grid.svg"
+import iconEnvelope from "../assets/svg_icon/envelope-alt.svg"
+import iconBox from "../assets/svg_icon/box.svg"
 
 export default defineComponent({
   name: "Nav",
@@ -15,19 +19,19 @@ export default defineComponent({
           text: '首页'
         },{
           link_to: '/archives',
-          icon_url: "./src/assets/svg_icon/id-badge-2.svg",
+          icon_url: iconBadge,
           text: '档案'
         },{
           link_to: '/categories',
-          icon_url: "../assets/svg_icon/grid.svg",
+          icon_url: iconGrid,
           text: '分类'
         },{
           link_to: '/messages',
-          icon_url: '../assets/svg_icon/envelope-alt.svg',
+          icon_url: iconEnvelope,
           text: '消息'
         },{
           link_to: '/projects',
-          icon_url: '../assets/svg_icon/box.svg',
+          icon_url: iconBox,
           text: '项目'
         }]
       }
