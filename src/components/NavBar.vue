@@ -6,6 +6,8 @@ import iconBadge from "../assets/svg_icon/id-badge-2.svg"
 import iconGrid from "../assets/svg_icon/grid.svg"
 import iconEnvelope from "../assets/svg_icon/envelope-alt.svg"
 import iconBox from "../assets/svg_icon/box.svg"
+import iconHelp from "../assets/svg_icon/help.svg"
+
 
 export default defineComponent({
   name: "Nav",
@@ -33,7 +35,12 @@ export default defineComponent({
           link_to: '/projects',
           icon_url: iconBox,
           text: '项目'
-        }]
+        }],
+        nav_help: {
+          link_to: '/about',
+          icon_url: iconHelp,
+          text: '关于'
+        }
       }
   },
   components: {IconExToText},
@@ -92,8 +99,8 @@ export default defineComponent({
       <a id="theme_icon" v-if="!isMobile" title="跟随浏览器主题">
         <img src="@/assets/svg_icon/moon.svg" alt="">
       </a>
-      <router-link to="/about" v-if="!isMobile">
-        <icon-ex-to-text url="/src/assets/svg_icon/help.svg" text="关于"/>
+      <router-link :to="nav_help.link_to" v-if="!isMobile">
+        <icon-ex-to-text :url="nav_help.icon_url" :text="nav_help.text"/>
       </router-link>
 
     </div>
