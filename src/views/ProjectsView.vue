@@ -2,24 +2,27 @@
 import {Project} from "../interface/types.ts";
 import ProjectGodotBox from "../components/ProjectGodotBox.vue";
 import ProjectUnityBox from "../components/ProjectUnityBox.vue";
+import LOGO from "../assets/svg_icon/LOGO.svg"
+import G_LOGO from "../assets/svg_icon/Godot-icon.svg"
+import U_LOGO from "../assets/svg_icon/Unity-icon.svg"
 
 const projectListG1: Project[] = [
   {
     id: 1,
     name: 'Godot1（模板）',
-    icon_url: '/src/assets/svg_icon/Godot-icon.svg',
+    icon_url: G_LOGO,
     date: new Date('2024-08-10'),
     author: '夜林',
-    background_photo_url: '/src/assets/svg_icon/LOGO.svg',
+    background_photo_url: LOGO,
     url: '#'
   },
   {
     id: 2,
     name: 'Godot2（模板）',
-    icon_url: '/src/assets/svg_icon/Godot-icon.svg',
+    icon_url: G_LOGO,
     date: new Date('2024-8-10'),
     author: '夜林',
-    background_photo_url: '/src/assets/svg_icon/Godot-icon.svg',
+    background_photo_url: G_LOGO,
     url: '#'
   }
 ]
@@ -28,16 +31,16 @@ const projectListU1: Project[] = [
   {
     id: 1,
     name: 'Unity1（模板）',
-    icon_url: '/src/assets/svg_icon/Unity-icon.svg',
+    icon_url: U_LOGO,
     date: new Date('2024-08-10'),
     author: '夜林',
-    background_photo_url: '/src/assets/svg_icon/Unity-icon.svg',
+    background_photo_url: U_LOGO,
     url: '#'
   },
   {
     id: 2,
     name: 'Unity2（模板）',
-    icon_url: '/src/assets/svg_icon/Unity-icon.svg',
+    icon_url: U_LOGO,
     date: new Date('2024-8-10'),
     author: '夜林',
     url: '#'
@@ -48,7 +51,7 @@ const projectListG2: Project[] = [
   {
     id: 1,
     name: 'Godot2-1（模板）',
-    icon_url: '/src/assets/svg_icon/Godot-icon.svg',
+    icon_url: G_LOGO,
     date: new Date('2024-08-10'),
     author: '夜林',
     url: '#'
@@ -56,7 +59,7 @@ const projectListG2: Project[] = [
   {
     id: 2,
     name: 'Godot2-2（模板）',
-    icon_url: '/src/assets/svg_icon/Godot-icon.svg',
+    icon_url: G_LOGO,
     date: new Date('2024-8-10'),
     author: '夜林',
     url: '#'
@@ -67,7 +70,7 @@ const projectListU2: Project[] = [
   {
     id: 1,
     name: 'Unity2-1（模板）',
-    icon_url: '/src/assets/svg_icon/Unity-icon.svg',
+    icon_url: U_LOGO,
     date: new Date('2024-08-10'),
     author: '夜林',
     url: '#'
@@ -75,7 +78,7 @@ const projectListU2: Project[] = [
   {
     id: 2,
     name: 'Unity2-2（模板）',
-    icon_url: '/src/assets/svg_icon/Unity-icon.svg',
+    icon_url: U_LOGO,
     date: new Date('2024-8-10'),
     author: '夜林',
     url: '#'
@@ -86,7 +89,7 @@ const projectListG3: Project[] = [
   {
     id: 1,
     name: 'Godot3-1（模板）',
-    icon_url: '/src/assets/svg_icon/Godot-icon.svg',
+    icon_url: G_LOGO,
     date: new Date('2024-08-10'),
     author: '夜林',
     url: '#'
@@ -94,7 +97,7 @@ const projectListG3: Project[] = [
   {
     id: 2,
     name: 'Godot3-2（模板）',
-    icon_url: '/src/assets/svg_icon/Godot-icon.svg',
+    icon_url: G_LOGO,
     date: new Date('2024-8-10'),
     author: '夜林',
     url: '#'

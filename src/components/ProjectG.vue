@@ -1,5 +1,6 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
+import LOGO from "../assets/svg_icon/LOGO.svg"
 
 export default defineComponent({
   name: "ProjectG",
@@ -28,7 +29,7 @@ export default defineComponent({
     background_url: {
       type: String,
       required: false,
-      default: '/src/assets/svg_icon/LOGO.svg'
+      default: LOGO
     }
   },
   methods: {
