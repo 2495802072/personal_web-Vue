@@ -36,13 +36,13 @@ export default defineComponent({
   min-width: 250px;
   max-width: 768px;
   width: 45%;
-  border: 4px solid var(--NFSW-card-border);
+  border: 4px solid var(--GLX-card-border);
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 table{
   width: 100%;
-  background-color: var(--NFSW-bankground-color);
+  background-color: var(--GLX-bankground-color);
 }
 @media (max-width: 768px) {
   #BoxBody{

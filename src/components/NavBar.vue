@@ -7,7 +7,8 @@ import iconGrid from "../assets/svg_icon/grid.svg"
 import iconEnvelope from "../assets/svg_icon/envelope-alt.svg"
 import iconBox from "../assets/svg_icon/box.svg"
 import iconHelp from "../assets/svg_icon/help.svg"
-
+import iconMoon from "../assets/svg_icon/moon.svg"
+import iconSun from "../assets/svg_icon/sun.svg"
 
 export default defineComponent({
   name: "Nav",
@@ -57,6 +58,11 @@ export default defineComponent({
       this.theme_dark = window.matchMedia('(prefers-color-scheme: dark)').matches; // 根据用户的偏好设置主题
     }
   },
+  computed:{
+    nav_theme_icon: function (){
+      return this.theme_dark?iconMoon:iconSun
+    }
+  },
   mounted() {
     this.updateIsMobile(); // 初始化状态
     this.updateThemeDark(); // 初始化主题状态
@@ -96,9 +102,8 @@ export default defineComponent({
 
       <!-- navbar·底脚 -->
       <hr v-if="!isMobile" class="w-100">
-      <a id="theme_icon" v-if="!isMobile" title="跟随浏览器主题">
-        <img src="@/assets/svg_icon/moon.svg" alt="">
-      </a>
+      <a id="theme_icon" class><icon-ex-to-text :url="nav_theme_icon" text="跟随浏览器"/></a>
+
       <router-link :to="nav_help.link_to" v-if="!isMobile">
         <icon-ex-to-text :url="nav_help.icon_url" :text="nav_help.text"/>
       </router-link>
@@ -113,7 +118,7 @@ nav {
   padding: 30px;
   max-height: 100vh;
   width: 68px;
-  background-color: var(--NFSW-nav-bankground-color);
+  background-color: var(--GLX-nav-bankground-color);
   transition: width 0.2s ease-in-out;
 }
 nav a {
@@ -141,6 +146,7 @@ nav a.router-link-exact-active::before{
 }
 #theme_icon:hover{
   filter: none;
+  cursor: auto;
 }
 #icon_N{
   will-change: filter;

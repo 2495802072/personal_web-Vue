@@ -17,6 +17,9 @@ export default defineComponent({
     isVisible: {
       type: Boolean,
       default: false
+    },
+    tarNum: {
+      type: Number
     }
   },
   data() {
@@ -24,8 +27,18 @@ export default defineComponent({
       bsCardBoxSize: {
         width: this.width,
         height: this.height
-      }
+      },
+      thumbs: 0,
+      lookNum: 0
     }
+  },
+  methods: {
+    thumbsUp: function (){
+      this.thumbs+=1
+    }
+  },
+  mounted() {
+    this.lookNum +=1
   }
 });
 </script>
@@ -44,37 +57,45 @@ export default defineComponent({
       </a>
 
       <div class="d-inline-flex flex-column w-100 h-100 p-3">
+<!--        中部按钮-->
         <div style="flex: 2;" class="btn-group">
+<!--          浏览人数-->
           <a href="#" class="btn">
             <img src="../assets/svg_icon/eye.svg" alt="email-icon" width="40px">
-            <p>-/-</p>
+            <p>{{ lookNum }}</p>
           </a>
+<!--          标签-->
           <a href="#" class="btn">
             <img src="../assets/svg_icon/tag-alt.svg" alt="tag-alt-icon" width="40px">
-            <p>-/-</p>
+            <p>{{ tarNum }}</p>
           </a>
-          <a href="#" class="btn">
+<!--          点赞-->
+          <a href="#" class="btn" @click="thumbsUp">
             <img src="../assets/svg_icon/thumb-up.svg" alt="thumb-icon" width="40px">
-            <p>-/-</p>
+            <p>{{thumbs}}</p>
           </a>
         </div>
 
         <hr class="w-100">
-
+<!--        底部按钮-->
         <div class="btn-group">
+<!--          邮箱-->
           <a href="mailto:2495802072@qq.com" class="btn border-secondary">
             <img src="../assets/svg_icon/envelope-alt.svg" alt="email-icon" width="40px">
             <label>Email</label>
           </a>
-          <a href="https://github.com/2495802072" class="btn border-secondary">
+<!--          Github-->
+          <a href="https://github.com/2495802072" class="btn border-secondary" target="_blank">
             <img src="../assets/svg_icon/github-icon1.svg" alt="github-icon" width="40px">
             <label>Github</label>
           </a>
-          <a href="#" class="btn border-secondary">
+<!--          Wechat-->
+          <a href="#" class="btn border-secondary disabled">
             <img src="../assets/svg_icon/weiChat-icon.svg" alt="weiChat-icon" width="40px">
             <label>微信</label>
           </a>
-          <a href="#" class="btn border-secondary">
+<!--          BiliBili-->
+          <a href="#" class="btn border-secondary disabled">
             <img src="../assets/svg_icon/BiliBili-icon.svg" alt="BiliBili-icon" width="40px">
             <label>BiliBili</label>
           </a>
@@ -92,11 +113,11 @@ export default defineComponent({
   top: 1rem;
   left: 5rem;
   padding: 1rem;
-  background-color: #111111b0;
+  background-color: #11111180;
   overflow: hidden;
   will-change: filter;
-  filter: drop-shadow(0 0 2em var(--NFSW-card-border));
-  border: 3px double var(--NFSW-card-border);
+  filter: drop-shadow(0 0 0em var(--GLX-card-border));
+  border: 5px double var(--GLX-card-border);
   border-radius: 0 30px 0 30px;
   z-index: 1080;
 }

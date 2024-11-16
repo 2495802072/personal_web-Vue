@@ -1,0 +1,37 @@
+:root{
+    --GLX-bankground-color: #242424; /* 主要 背景颜色*/
+    --GLX-nav-bankground-color: #000000d0;/* nav 背景颜色*/
+    --GLX-button-bankground-bscolor: #3a5985;/* 按钮 背景颜色*/
+
+    --GLX-font-color: #aeaeae;/* 主要 文字颜色*/
+
+    --GLX-a-default-color: #008384;/* 默认 a颜色*/
+    --GLX-a-hover-color: #00e0c7;/* 悬停 a颜色*/
+    --GLX-a-disabled: #beaaa0;/* 禁用 a颜色*/
+
+    --GLX-card-border: #1b2727;/* 个人名片边框*/
+}
+
+/*设置明亮主题偏好*/
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+        --GLX-bankground-color: #eaeaea; /* 主要 背景颜色*/
+        --GLX-nav-bankground-color: #ffffffd0;/* nav 背景颜色*/
+        --GLX-button-bankground-bscolor: #898989;/* 按钮 背景颜色*/
+
+        --GLX-font-color: #232323;/* 主要 文字颜色*/
+
+        --GLX-a-default-color: #ff2e63;/* 默认 a颜色*/
+        --GLX-a-hover-color: #ff2e63;/* 悬停 a颜色*/
+        --GLX-a-disabled: #737770;/* 禁用 a颜色*/
+        /*TODO*/
+        --GLX-card-border: #737770;/* 个人名片边框*/
+    }
+    a.router-link-exact-active {
+        /*内存消耗略大，但是更泛用，增加亮度和对比度*/
+        will-change: filter;
+        filter: sepia(1) saturate(150);
+    }
+}

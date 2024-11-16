@@ -37,7 +37,7 @@ export default defineComponent({
         height: "100%",
         alignItems: "center",
         justifyContent: "center"
-      } as CSSProperties // 明确指定类型
+      } as CSSProperties
     }
   },
   computed: {
@@ -50,7 +50,7 @@ export default defineComponent({
 
 <template>
   <div :class="nav_open?'disabled':''" class="image-container w-100 h-100">
-    <img :src="url" alt="">
+    <img :src="url" alt="" />
     <span :style="currentStyles" class="overlay-text text-break">{{text}}</span>
   </div>
 </template>

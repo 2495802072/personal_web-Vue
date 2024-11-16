@@ -12,31 +12,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --NFSW-bankground-color: #242424; /* 主要 背景颜色*/
-  --NFSW-nav-bankground-color: #000000d0;/* nav 背景颜色*/
-  --NFSW-button-bankground-bscolor: #3a5985;/* 按钮 背景颜色*/
-
-  --NFSW-font-color: #aeaeae;/* 主要 文字颜色*/
-
-  --NFSW-a-default-color: #008384;/* 默认 a颜色*/
-  --NFSW-a-hover-color: #00e0c7;/* 悬停 a颜色*/
-  --NFSW-a-disabled: #beaaa0;/* 禁用 a颜色*/
-
-  --NFSW-card-border: #1b2727;/* 个人名片边框*/
 }
 
 a {
   font-weight: 500;
-  color: var(--NFSW-a-default-color);
+  color: var(--GLX-a-default-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--NFSW-a-hover-color);
+  color: var(--GLX-a-hover-color);
   will-change: filter;
   filter: brightness(140%) contrast(110%);
 }
 a.disabled{
-  color: var(--NFSW-a-disabled);
+  color: var(--GLX-a-disabled);
   pointer-events: none;
 }
 /*默认激活链接颜色*/
@@ -52,7 +41,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--NFSW-bankground-color);
+  background-color: var(--GLX-bankground-color);
 }
 
 h1 {
@@ -67,7 +56,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--NFSW-button-bankground-bscolor);
+  background-color: var(--GLX-button-bankground-bscolor);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -90,29 +79,13 @@ button:focus-visible {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--NFSW-font-color);
+  color: var(--GLX-font-color);
 }
 
-/*设置明亮主题偏好*/
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-    --NFSW-bankground-color: #eaeaea; /* 主要 背景颜色*/
-    --NFSW-nav-bankground-color: #ffffffd0;/* nav 背景颜色*/
-    --NFSW-button-bankground-bscolor: #898989;/* 按钮 背景颜色*/
-
-    --NFSW-font-color: #232323;/* 主要 文字颜色*/
-
-    --NFSW-a-default-color: #ff2e63;/* 默认 a颜色*/
-    --NFSW-a-hover-color: #ff2e63;/* 悬停 a颜色*/
-    --NFSW-a-disabled: #737770;/* 禁用 a颜色*/
-    /*TODO*/
-    --NFSW-card-border: #e3abe3a3;/* 个人名片边框*/
-  }
+@media (prefers-color-scheme: light){
   a.router-link-exact-active {
     /*内存消耗略大，但是更泛用，增加亮度和对比度*/
     will-change: filter;
-    filter: sepia(1) saturate(150);
+    filter: brightness(50%) contrast(200%) ;
   }
 }
