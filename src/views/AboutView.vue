@@ -18,7 +18,7 @@
     <h1> Vite + Vue + TS</h1>
     <hr>
     <p>网站部署：<a href="https://app.netlify.com/">Netlify</a></p>
-    <p>开发参与：<a href="https://github.com/2495802072">顾霖轩</a>&numsp;<a href="#">夜林</a></p>
+    <p>开发参与：<a href="https://github.com/2495802072">顾霖轩</a></p>
   </div>
 </template>
 
